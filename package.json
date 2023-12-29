@@ -1,0 +1,25 @@
+{
+  "name": "news-case",
+  "version": "1.0.0",
+  "description": "news project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erolsenol/news-case.git"
+  },
+  "keywords": [
+    "news",
+    "html",
+    "css",
+    "jquery"
+  ],
+  "author": "Erol Senol <erolsnl@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erolsenol/news-case/issues"
+  },
+  "homepage": "https://github.com/erolsenol/news-case#readme"
+}
