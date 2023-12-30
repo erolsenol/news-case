@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "sfpro-bold";
 }
-.hb-container {
+.hb-header {
   width: 100%;
   margin: auto;
   display: flex;
@@ -30,7 +30,8 @@ header {
   justify-content: center;
   font-size: 14px;
 }
-.top-header, .bottom-header {
+.top-header,
+.bottom-header {
   width: 100%;
   margin: auto;
 }
@@ -53,7 +54,8 @@ header {
   justify-content: center;
   align-items: center;
 }
-.top-nav, .bottom-nav {
+.top-nav,
+.bottom-nav {
   display: flex;
   vertical-align: middle;
   align-items: center;
@@ -77,7 +79,7 @@ ul > li {
 .search::placeholder {
   padding-left: 0px;
 }
-.search:focus{
+.search:focus {
   outline: none;
 }
 .login-btn {
@@ -90,4 +92,14 @@ ul > li {
   color: #f4f4f4;
   cursor: pointer;
   border-color: #f4f4f4;
+}
+
+/* BANNER */
+.banner {
+  text-align: center;
+  margin: 1.2rem 0;
+}
+.banner-image {
+  width: 970px;
+  height: 250px;
 }
