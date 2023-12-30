@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "sfpro-bold";
+}
+.hb-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+header {
+  width: 100%;
+  flex-direction: column;
+  background-color: #000000;
+  color: #f4f4f4;
+  white-space: nowrap;
+}
+.top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  font-size: 18px;
+}
+.bottom-header {
+  height: 36px;
+  background-color: #888888;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+.top-header, .bottom-header {
+  width: 100%;
+  margin: auto;
+}
+.logo {
+  display: block;
+}
+.logo > a {
+  height: 100%;
+}
+.logo .logo-img {
+  display: block;
+  width: 232px;
+  aspect-ratio: auto 232 / 52;
+  height: 52px;
+}
+.bottom-nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-nav, .bottom-nav {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+  padding: 0;
+}
+.nav-item {
+  padding: 0 10px;
+}
+ul > li {
+  display: inline-block;
+}
+.search {
+  width: 120px;
+  height: 24px;
+  border-radius: 20px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.search::placeholder {
+  padding-left: 0px;
+}
+.search:focus{
+  outline: none;
+}
+.login-btn {
+  width: 90px;
+  height: 26px;
+  background-color: #000000;
+  border-radius: 20px;
+  border: 2px solid black;
+  border-width: 0.4px;
+  color: #f4f4f4;
+  cursor: pointer;
+  border-color: #f4f4f4;
+}

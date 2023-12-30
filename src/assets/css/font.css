@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'sfpro-regular';
+    src: url('../fonts/sfpro/REGULAR.OTF');
+}
+@font-face {
+    font-family: 'sfpro-medium';
+    src: url('../fonts/sfpro/MEDIUM.OTF');
+}
+@font-face {
+    font-family: 'sfpro-bold';
+    src: url('../fonts/sfpro/BOLD.OTF');
+}
