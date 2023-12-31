@@ -35,8 +35,16 @@ header {
   width: 100%;
   margin: auto;
 }
+.side-menu {
+  display: none;
+  height: 100%;
+  min-width: 3rem;
+  background-color: #fe0000;
+  cursor: pointer;
+}
 .logo {
   display: block;
+  background-color: #fe0000;
 }
 .logo > a {
   height: 100%;
@@ -46,6 +54,7 @@ header {
   width: 232px;
   aspect-ratio: auto 232 / 52;
   height: 52px;
+  margin: auto;
 }
 .bottom-nav {
   width: 80%;
@@ -70,21 +79,27 @@ ul > li {
   display: inline-block;
 }
 .search {
+  position: relative;
+}
+.search .search-icon {
+  position: absolute;
+  right: 1.4rem;
+  top: 0.72rem;
+  color: #888888;
+}
+.search-input {
   width: 120px;
-  height: 24px;
+  height: 28px;
   border-radius: 20px;
   margin-right: 10px;
   padding-left: 10px;
 }
-.search::placeholder {
-  padding-left: 0px;
-}
-.search:focus {
+.search-input:focus {
   outline: none;
 }
 .login-btn {
-  width: 90px;
-  height: 26px;
+  width: 96px;
+  height: 28px;
   background-color: #000000;
   border-radius: 20px;
   border: 2px solid black;
@@ -92,6 +107,32 @@ ul > li {
   color: #f4f4f4;
   cursor: pointer;
   border-color: #f4f4f4;
+}
+
+.top-header,
+.bottom-nav {
+  max-width: 1056px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .top-nav,
+  .search,
+  .login-btn {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .side-menu {
+    display: flex;
+    align-items: center;
+  }
+  .menu-icon {
+  margin-left: 14px;
+  }
 }
 
 /* BANNER */
