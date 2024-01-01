@@ -38,7 +38,7 @@ $(document).ready(function () {
   slideInit();
 
   function showSlide(newIndex = null, next = false) {
-    if (typeof newIndex === "object") {
+    if (newIndex === null) {
       $(".slider-image-item").each((i, slide) => {
         slide.style.transition = `none`;
       });
@@ -49,8 +49,6 @@ $(document).ready(function () {
       });
     }
 
-    console.log("SlideIndex",SlideIndex);
-    console.log(`$(".slider-number-item")[SlideIndex]`,$(".slider-number-item")[SlideIndex]);
     $(".slider-number-item")[SlideIndex].classList.remove("active");
 
     if (!next) {
