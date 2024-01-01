@@ -135,80 +135,106 @@
 
 /* Credit Card */
 .credit-card-icon {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 24px;
-    height: 18px;
-    border: 2px solid;
-    border-radius: 4px
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 24px;
+  height: 18px;
+  border: 2px solid;
+  border-radius: 4px;
 }
 .credit-card-icon::after,
 .credit-card-icon::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    border-radius: 3px;
-    width: 24px;
-    left: -2px;
-    height: 2px;
-    background: currentColor;
-    top: 9px
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 24px;
+  left: -2px;
+  height: 2px;
+  background: currentColor;
+  top: 9px;
 }
 .credit-card-icon::before {
-    width: 6px;
-    left: 2px;
-    top: 3px
+  width: 6px;
+  left: 2px;
+  top: 3px;
 }
 
 /* Chevron Right */
 .chevron-right-icon {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 22px;
-    height: 22px;
-    border: 2px solid transparent;
-    border-radius: 100px
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
 }
 .chevron-right-icon::after {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-bottom: 2px solid;
-    border-right: 2px solid;
-    transform: rotate(-45deg);
-    right: 6px;
-    top: 4px
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  right: 6px;
+  top: 4px;
 }
 
 /* Chevron Left */
 .chevron-left-icon {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 22px;
-    height: 22px;
-    border: 2px solid transparent;
-    border-radius: 100px
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
 }
 .chevron-left-icon::after {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-bottom: 2px solid;
-    border-left: 2px solid;
-    transform: rotate(45deg);
-    left: 6px;
-    top: 4px
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(45deg);
+  left: 6px;
+  top: 4px;
+}
+
+/* Chevron Down */
+
+.chevron-down-icon {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px
+}
+.chevron-down-icon::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  left: 4px;
+  top: 2px
 }

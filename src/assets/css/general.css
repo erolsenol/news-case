@@ -210,6 +210,7 @@ ul > li {
   width: 68%;
   position: relative;
   margin: 0 1rem;
+  height: auto;
 }
 .slider-image {
   overflow: hidden;
@@ -282,6 +283,37 @@ ul > li {
 .vertical-banner {
   width: 27%;
   margin-right: 1rem;
+}
+
+/* Exchange */
+.exchange {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+  background: #ffffff;
+  font-size: 14px;
+}
+.exchange-item {
+  display: flex;
+  justify-content: center;
+  margin: 0.2rem 0;
+}
+.exchange .chevron-down-icon {
+  margin: 0 0.4rem;
+}
+
+.exchange .down .exchange-item-price,
+.exchange .down .chevron-down-icon {
+  color: #fb0d1b;
+}
+
+.exchange .up .exchange-item-price {
+  color: #41b87f;
+}
+.exchange .up .chevron-down-icon {
+  color: #41b87f;
+  transform: rotate(180deg);
 }
 
 /* Media Queries */
