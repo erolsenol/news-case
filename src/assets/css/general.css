@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "sfpro-bold";
   background-color: #f4f4f4;
+  width: 100%;
 }
 .hb-header {
   width: 100%;
@@ -186,15 +187,16 @@ ul > li {
   z-index: 0;
   transition: all 0.2s ease;
 }
+.hb-container {
+  max-width: 1056px;
+  margin: auto;
+}
 
 /* Banner */
 .banner {
-  text-align: center;
-  margin: 1.2rem 0;
-}
-.banner-image {
-  width: 970px;
-  height: 250px;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
 }
 
 /* Main Content */
@@ -203,13 +205,13 @@ ul > li {
   flex-wrap: wrap;
   margin: auto;
   height: 100%;
-  max-width: 1056px;
+  width: 100%;
 }
 
 .slider {
-  width: 68%;
+  width: 70%;
   position: relative;
-  margin: 0 1rem;
+  padding: 0 2% 0 0;
   height: auto;
 }
 .slider-image {
@@ -281,8 +283,7 @@ ul > li {
 }
 
 .vertical-banner {
-  width: 27%;
-  margin-right: 1rem;
+  width: 28%;
 }
 
 /* Exchange */
@@ -298,9 +299,10 @@ ul > li {
   display: flex;
   justify-content: center;
   margin: 0.2rem 0;
+  line-height: 22px;
 }
 .exchange .chevron-down-icon {
-  margin: 0 0.4rem;
+  margin: 0 0.1rem;
 }
 
 .exchange .down .exchange-item-price,
@@ -339,9 +341,16 @@ ul > li {
     display: none;
   }
 
+  /* Banner */
+  .banner {
+    width: 98%;
+    margin: 1%;
+  }
+
   /* Slider */
   .slider {
     width: 100%;
+    padding: 0 1% 1% 1%;
   }
   .slider-left,
   .slider-right {
@@ -354,5 +363,18 @@ ul > li {
   /* Vertical Banner */
   .vertical-banner {
     display: none;
+  }
+
+  .exchange {
+    flex-wrap: wrap;
+  }
+  .exchange-item {
+    min-width: 8rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hb-container {
+    padding: 0 1rem;
   }
 }

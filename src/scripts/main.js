@@ -42,12 +42,15 @@ $(document).ready(function () {
       $(".slider-image-item").each((i, slide) => {
         slide.style.transition = `none`;
       });
+      return
     } else {
       $(".slider-image-item").each((i, slide) => {
         slide.style.transition = ``;
       });
     }
 
+    console.log("SlideIndex",SlideIndex);
+    console.log(`$(".slider-number-item")[SlideIndex]`,$(".slider-number-item")[SlideIndex]);
     $(".slider-number-item")[SlideIndex].classList.remove("active");
 
     if (!next) {
