@@ -207,11 +207,16 @@ ul > li {
   height: 100%;
   width: 100%;
 }
+.row-slider {
+  width: 70%;
+  padding: 0 2% 0 0;
+}
+.row-banner {
+  width: 28%;
+}
 
 .slider {
-  width: 70%;
   position: relative;
-  padding: 0 2% 0 0;
   height: auto;
 }
 .slider-image {
@@ -234,7 +239,7 @@ ul > li {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 100%;
-  top: 32%;
+  top: 46%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,8 +287,11 @@ ul > li {
   background-color: #c3c3c3;
 }
 
-.vertical-banner {
-  width: 28%;
+/* Slider Sub */
+.slider-sub {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Exchange */
@@ -352,6 +360,33 @@ ul > li {
   font-size: 16px;
   margin: 0.4rem;
 }
+
+/* Row Content */
+.row-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row-content-card,
+.row-content-ad {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin: 1rem 1rem 0 0;
+  max-height: 283px;
+  cursor: pointer;
+}
+.row-content-card img {
+  height: 60%;
+}
+.row-content-card p {
+  margin: 0.4rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 16px;
+}
+
 /* Media Queries */
 /* Header */
 @media only screen and (max-width: 1024px) {
@@ -395,7 +430,7 @@ ul > li {
   }
 
   /* Vertical Banner */
-  .vertical-banner {
+  .row-banner {
     display: none;
   }
 
