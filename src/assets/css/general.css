@@ -215,7 +215,7 @@ ul > li {
   overflow: hidden;
   position: relative;
   max-height: 411px;
-  
+
   margin: auto;
   display: flex;
   align-items: center;
@@ -262,6 +262,10 @@ ul > li {
   font-family: "sfpro-regular";
   font-size: 14px;
   background: #ffffff;
+}
+.slider-number .active {
+  border-top: #fb0d1b solid 3px;
+  color: #fb0d1b;
 }
 .slider-number-item {
   line-height: 32px;
