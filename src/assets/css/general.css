@@ -472,7 +472,11 @@ footer {
   margin-top: 1rem;
   font-size: 14px;
 }
-.footer-content{
+footer a {
+  text-decoration: none;
+  color: #333333;
+}
+.footer-content {
   max-width: 1056px;
   margin: auto;
   padding-top: 0.1rem;
@@ -484,13 +488,13 @@ footer {
   font-size: 24px;
   margin: 0.8rem 0 0 0;
   padding-left: 1rem;
-  border-left: 3px #FB0D1B solid;
+  border-left: 3px #fb0d1b solid;
 }
 .footer-content-brand .text-red {
-  color: #FB0D1B;
+  color: #fb0d1b;
 }
 .footer-content-brand .text-gray {
-  color: #5D5D5D;
+  color: #5d5d5d;
   position: relative;
   left: -4px;
 }
@@ -511,7 +515,7 @@ footer {
   margin-bottom: 0.6rem;
 }
 .footer-content-list-item {
-  font-family: 'sfpro-regular';
+  font-family: "sfpro-regular";
   font-size: 13px;
   margin-bottom: 0.4rem;
 }
@@ -524,7 +528,17 @@ footer {
   margin-top: 1rem;
 }
 .social-platform {
-  width: 65%;
+  width: 60%;
+}
+.social-platform-content {
+  margin-top: 0.8rem;
+}
+.social-platform .social-platform-content .social-platform-content-icon {
+  margin: auto;
+  width: 24.5px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 100%;
 }
 .social-platform-content {
   display: flex;
@@ -533,6 +547,68 @@ footer {
 }
 .social-app {
   width: 35%;
+}
+.social-app-content {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.social-app-content-btn {
+  margin: auto;
+  width: 93px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  background-size: contain;
+}
+.social-app-content .app-store {
+  background-image: url("../images/app/app-store.jpg");
+}
+.social-app-content .google-play {
+  background-image: url("../images/app/google-play.jpg");
+}
+.social-app-content .huawei-gallery {
+  background-image: url("../images/app/huawei-gallery.jpg");
+}
+.footer-policy {
+  font-family: "sfpro-regular";
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.footer-policy a {
+  font-size: 13px;
+  padding-right: 10px;
+  height: 16px;
+  line-height: 16px;
+  border-right: 1px #333333 solid;
+}
+.footer-desc {
+  font-family: "sfpro-regular";
+  margin: 0.8rem 0 1rem 0;
+  color: #6d6d6d;
+  font-size: 12px;
+}
+
+.error-notification {
+  margin-left: 3rem;
+}
+.error-notification-date {
+  color: #333333;
+  font-size: 12px;
+  margin-right: 0.2rem;
+}
+.error-notification-btn {
+  height: 22px;
+  background-color: #ffffff;
+  border: 2px #fb0d1b solid;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #fb0d1b;
+  padding: 4px 8px;
+  line-height: 11px;
+  margin-left: 0.2rem;
 }
 
 /* Media Queries */

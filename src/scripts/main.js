@@ -1,3 +1,6 @@
+import { getCurrentDate } from "./helper.js"
+console.log("getCurrentDate",getCurrentDate);
+
 $(document).ready(function () {
   const sidebarEl = $("#sidebar");
   const bgBlurEl = $(".bg-blur");
@@ -28,8 +31,7 @@ $(document).ready(function () {
       );
       $(".slider-number").append(
         $(
-          `<div class="slider-number-item ${index == 0 ? "active" : ""}">${
-            index + 1
+          `<div class="slider-number-item ${index == 0 ? "active" : ""}">${index + 1
           }</div>`
         ).click((event) => showSlide(event.target.innerText - 1))
       );
@@ -75,4 +77,6 @@ $(document).ready(function () {
   addEventListener("resize", (event) => {
     showSlide();
   });
+
+  $(".error-notification-date").text(getCurrentDate())
 });
