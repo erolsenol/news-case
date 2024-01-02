@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "sfpro-bold";
   background-color: #f4f4f4;
-  width: 100%;
+  height: 100vh;
 }
 .hb-header {
   width: 100%;
@@ -197,6 +197,7 @@ ul > li {
   width: 100%;
   height: auto;
   margin: 1rem 0;
+  cursor: pointer;
 }
 
 /* Main Content */
@@ -224,10 +225,10 @@ ul > li {
   overflow: hidden;
   position: relative;
   max-height: 411px;
-
   margin: auto;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .slider-image-item {
   flex: 0 0 100%;
@@ -339,23 +340,19 @@ ul > li {
   background-color: #ffffff;
   width: 49%;
   max-height: 100px;
+  cursor: pointer;
 }
-.new-mini-card-image {
-  width: 100%;
-}
-.new-mini-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.new-mini-card .new-mini-card-image {
+  width: 50%;
 }
 .new-mini-card-content {
-  width: 100%;
+  width: 50%;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .new-mini-card-content-text {
   font-size: 16px;
-  margin: 0.4rem;
+  margin: 0.6rem;
 }
 
 /* Row Content */
@@ -379,13 +376,13 @@ ul > li {
   height: 290px;
   cursor: pointer;
   overflow: hidden;
-  margin: 1rem 0.4rem 0 0.4rem  ;
+  margin: 1rem 0.4rem 0 0.4rem;
 }
 .row-content-card img {
   height: 60%;
 }
 .row-content-card p {
-  margin: 0.4rem;
+  margin: 0.6rem;
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: 16px;
@@ -450,7 +447,7 @@ ul > li {
   margin: 0.2rem 0.4rem;
 }
 .row-content-youtube .divider {
-  width: 80%;
+  width: 90%;
 }
 .row-content-youtube-show-all {
   width: 90%;
@@ -524,9 +521,13 @@ footer a {
 .footer-content-list {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 20%;
   margin: 1rem 0rem 0 0;
   color: #333333;
+}
+.footer-content-list * {
+  cursor: pointer;
 }
 .footer-content-list-title {
   font-weight: bold;
@@ -578,6 +579,7 @@ footer a {
   border: none;
   border-radius: 4px;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 .social-app-content .app-store {
   background-image: url("../images/app/app-store.jpg");
@@ -630,7 +632,12 @@ footer a {
 }
 
 /* Media Queries */
-/* Header */
+@media only screen and (max-width: 1070px) {
+  .row-content {
+    min-width: 1010px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .top-nav,
   .search,
@@ -686,21 +693,84 @@ footer a {
     display: block;
   }
 
+  .new-mini-card {
+  }
+
   /* News Content */
   .row-content {
-
+    min-width: 100%;
   }
   .row-content-card,
   .row-content-ad,
   .row-content-youtube,
   .row-content-breaking-news {
     width: 48%;
+    height: 350px;
+  }
+  .row-content .row-content-youtube {
+    height: 716px;
+  }
+  .row-content .row-content-breaking-news {
     float: left;
+    height: 895px;
+  }
+
+  .footer {
+    font-size: 18px;
+  }
+  .footer-content {
+    display: block;
+    position: relative;
+  }
+  .footer-content-brand {
+    font-size: 30px;
+    margin-left: 1rem;
+  }
+  .footer-content .divider {
+    display: none;
+  }
+  .footer-content-list {
+    margin: 1rem 0 0 1rem;
+    width: 31%;
+    float: left;
+  }
+  .footer-content-list-item {
+    font-size: 16px;
+  }
+  .social {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
-    height: 360px;
-    cursor: pointer;
+  }
+  .social-platform {
+    width: 90%;
+  }
+  .social-app {
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  .footer-policy {
+    display: inline-block;
+    position: relative;
+  }
+  .footer-policy a,
+  .footer-policy .error-notification {
+    float: left;
+    padding: 0 1rem;
+    margin: 0.4rem 0;
+    font-size: 15px;
+  }
+  .error-notification {
+    margin-left: 0;
+  }
+
+  .social-platform,
+  .footer-policy {
+    padding-left: 1rem;
+    margin-top: 1rem;
+  }
+  .footer-desc {
+    padding: 0 0 0.6rem 1rem;
+    margin: 0;
   }
 }
 
@@ -720,5 +790,41 @@ footer a {
   }
   .new-mini-card:last-child {
     margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .row-content-card,
+  .row-content-ad,
+  .row-content-youtube,
+  .row-content-breaking-news {
+    width: 100%;
+    height: 400px;
+  }
+  .row-content .row-content-youtube {
+    height: auto;
+  }
+  .row-content-youtube-item {
+    max-height: 145px;
+  }
+  .row-content-youtube-item img {
+    aspect-ratio: 56 / 29;
+  }
+  .row-content .row-content-breaking-news {
+    height: auto;
+  }
+  .footer-content-list {
+    margin: 1rem 0 0 1rem;
+    width: 47%;
+  }
+  .social-platform-content {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  .social-platform .social-platform-content .social-platform-content-icon {
+    height: 36px;
+    width: 39px;
+    margin: 1rem 3rem 0 0;
   }
 }
