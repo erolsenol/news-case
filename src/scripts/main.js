@@ -1,5 +1,4 @@
 import { getCurrentDate } from "./helper.js"
-console.log("getCurrentDate",getCurrentDate);
 
 $(document).ready(function () {
   const sidebarEl = $("#sidebar");
