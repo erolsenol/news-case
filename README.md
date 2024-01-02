@@ -1,4 +1,3 @@
-<p align="left">This project consists of pure html, css and jquery.</p>
 
 ###
 
