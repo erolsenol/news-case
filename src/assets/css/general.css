@@ -470,6 +470,7 @@ footer {
   width: 100%;
   background-color: #ffffff;
   margin-top: 1rem;
+  font-size: 14px;
 }
 .footer-content{
   max-width: 1056px;
@@ -496,6 +497,8 @@ footer {
 .footer .divider {
   margin: 1rem 0 0 0;
 }
+
+/* Footer Categories */
 .footer-content-list {
   display: flex;
   flex-direction: column;
@@ -504,7 +507,6 @@ footer {
   color: #333333;
 }
 .footer-content-list-title {
-  font-size: 14px;
   font-weight: bold;
   margin-bottom: 0.6rem;
 }
@@ -512,6 +514,25 @@ footer {
   font-family: 'sfpro-regular';
   font-size: 13px;
   margin-bottom: 0.4rem;
+}
+
+/* Footer Social */
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.social-platform {
+  width: 65%;
+}
+.social-platform-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.social-app {
+  width: 35%;
 }
 
 /* Media Queries */
