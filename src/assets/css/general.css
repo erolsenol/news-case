@@ -365,7 +365,8 @@ ul > li {
 }
 .row-content-card,
 .row-content-ad,
-.row-content-youtube {
+.row-content-youtube,
+.row-content-breaking-news {
   box-sizing: border-box;
   width: 32%;
   margin: 0.8rem 0.8rem 0 0;
@@ -396,18 +397,12 @@ ul > li {
   padding: 1rem;
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 90%;
 }
 .row-content-youtube-title-icon {
   height: 40px;
   width: 40px;
-  border-radius: 20px;
-  background-color: #fb0d1b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #f4f4f4;
-  font-size: 30px;
   margin-right: 0.6rem;
 }
 .row-content-youtube-title-center {
@@ -463,6 +458,23 @@ ul > li {
   font-size: 14px;
   margin: 0.4rem 0 1rem;
   cursor: pointer;
+}
+
+/* Breaking News */
+.row-content-breaking-news {
+  padding: 0.8rem;
+  height: auto;
+}
+.row-content-breaking-news-title {
+  padding: 0.2rem 0 0.2rem 1rem;
+  border-left: 4px #FB0D1B solid;
+  font-size: 18px;
+}
+.row-content-breaking-news-text {
+  margin: 0.6rem 0;
+  font-family: "sfpro-regular";
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /* Footer */
@@ -586,7 +598,7 @@ footer a {
 }
 .footer-desc {
   font-family: "sfpro-regular";
-  margin: 0.8rem 0 1rem 0;
+  margin: 0.8rem 0;
   color: #6d6d6d;
   font-size: 12px;
 }
