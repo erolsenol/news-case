@@ -464,6 +464,8 @@ ul > li {
 .row-content-breaking-news {
   padding: 0.8rem;
   height: auto;
+  max-height: 895px;
+  overflow: hidden;
 }
 .row-content-breaking-news-title {
   padding: 0.2rem 0 0.2rem 1rem;
@@ -471,7 +473,7 @@ ul > li {
   font-size: 18px;
 }
 .row-content-breaking-news-text {
-  margin: 0.6rem 0;
+  margin: 0.7rem 0;
   font-family: "sfpro-regular";
   font-size: 16px;
   line-height: 20px;
