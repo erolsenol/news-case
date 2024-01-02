@@ -1,339 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/assets/css/index.css" />
-    <title>News</title>
-  </head>
-  <body>
-    <div class="hb-header">
-      <header class="header">
-        <div class="top-header">
-          <div class="side-menu" id="side-menu-btn">
-            <i class="menu-icon"></i>
-          </div>
-          <div class="logo">
-            <a href="./index.html">
-              <img
-                class="logo-img"
-                src="./src/assets/images/haberler-logo.svg"
-              />
-            </a>
-          </div>
-          <ul class="top-nav" aria-label="Top Header">
-            <li class="nav-item"><a>HABER</a></li>
-            <li class="nav-item">SON DAKİKA</li>
-            <li class="nav-item">SPOR</li>
-            <li class="nav-item">EKONOMİ</li>
-            <li class="nav-item">MAGAZİN</li>
-          </ul>
-          <div class="search">
-            <input type="text" class="search-input" placeholder="Haber ara" />
-            <i class="search-icon"></i>
-          </div>
-          <button type="button" class="login-btn">Üye Girişi</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/assets/css/index.css" />
+  <title>News</title>
+</head>
+
+<body>
+  <div class="hb-header">
+    <header class="header">
+      <div class="top-header">
+        <div class="side-menu" id="side-menu-btn">
+          <i class="menu-icon"></i>
         </div>
-        <div class="bottom-header">
-          <ul class="bottom-nav" aria-label="Bottom Header">
-            <li class="nav-item">DÜNYA</li>
-            <li class="nav-item">FİNANS</li>
-            <li class="nav-item">POLİTİKA</li>
-            <li class="nav-item">3.SAYFA</li>
-            <li class="nav-item">TEKNOLOJİ</li>
-            <li class="nav-item">GÜNCEL</li>
-            <li class="nav-item">YAŞAM</li>
-            <li class="nav-item">EĞİTİM</li>
-            <li class="nav-item">SAĞLIK</li>
-            <li class="nav-item">KUPONLAR</li>
-            <li class="nav-item">TÜM KATEGORİLER</li>
-          </ul>
+        <div class="logo">
+          <a href="./index.html">
+            <img class="logo-img" src="./src/assets/images/haberler-logo.svg" />
+          </a>
         </div>
-      </header>
-    </div>
-    <div class="sidebar" id="sidebar">
-      <div class="sidebar-menu">
-        <a href="#">
-          <div class="sidebar-menu-item">
-            <div class="sidebar-menu-item-icon">
-              <i class="home-icon"></i>
-            </div>
-            <div class="sidebar-menu-item-text">Anasayfa</div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="sidebar-menu-item">
-            <div class="sidebar-menu-item-icon">
-              <i class="bolt-icon"></i>
-            </div>
-            <div class="sidebar-menu-item-text">Son Dakika</div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="sidebar-menu-item">
-            <div class="sidebar-menu-item-icon">
-              <i class="bolt-icon"></i>
-            </div>
-            <div class="sidebar-menu-item-text">Güncel</div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="sidebar-menu-item">
-            <div class="sidebar-menu-item-icon">
-              <i class="credit-card-icon"></i>
-            </div>
-            <div class="sidebar-menu-item-text">Ekonomi</div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="sidebar-menu-item">
-            <div class="sidebar-menu-item-icon">
-              <i class="bolt-icon"></i>
-            </div>
-            <div class="sidebar-menu-item-text">Magazin</div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="sidebar-menu-item">
-            <div class="sidebar-menu-item-icon">
-              <i class="bolt-icon"></i>
-            </div>
-            <div class="sidebar-menu-item-text">Spor</div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="sidebar-menu-item">
-            <div class="sidebar-menu-item-icon">
-              <i class="bolt-icon"></i>
-            </div>
-            <div class="sidebar-menu-item-text">Dünya</div>
-          </div>
-        </a>
+        <ul class="top-nav" aria-label="Top Header">
+          <li class="nav-item"><a>HABER</a></li>
+          <li class="nav-item">SON DAKİKA</li>
+          <li class="nav-item">SPOR</li>
+          <li class="nav-item">EKONOMİ</li>
+          <li class="nav-item">MAGAZİN</li>
+        </ul>
+        <div class="search">
+          <input type="text" class="search-input" placeholder="Haber ara" />
+          <i class="search-icon"></i>
+        </div>
+        <button type="button" class="login-btn">Üye Girişi</button>
       </div>
-    </div>
-    <div class="bg-blur"></div>
-    <main class="hb-container">
-      <img class="banner" src="./src/assets/images/banner.jpeg" />
-      <div class="main-content">
-        <div class="row-slider">
-          <div class="slider">
-            <div class="slider-image"></div>
-            <div class="slider-left">
-              <i class="chevron-left-icon"></i>
-            </div>
-            <div class="slider-right">
-              <i class="chevron-right-icon"></i>
-            </div>
-            <div class="slider-number"></div>
-          </div>
-          <div class="exchange">
-            <div class="exchange-item down">
-              <span class="exchange-item-type">Dolar</span>
-              <i class="chevron-down-icon"></i>
-              <span class="exchange-item-price">19,50</span>
-            </div>
-            <div class="exchange-item up">
-              <span class="exchange-item-type">Euro</span>
-              <i class="chevron-down-icon"></i>
-              <span class="exchange-item-price">21,55</span>
-            </div>
-            <div class="exchange-item up">
-              <span class="exchange-item-type">Altın</span>
-              <i class="chevron-down-icon"></i>
-              <span class="exchange-item-price">1267,64</span>
-            </div>
-            <div class="divider"></div>
-            <div class="exchange-item down">
-              <span class="exchange-item-type">Bitcoin</span>
-              <i class="chevron-down-icon"></i>
-              <span class="exchange-item-price">27,881</span>
-            </div>
-            <div class="exchange-item up">
-              <span class="exchange-item-type">Borsa</span>
-              <i class="chevron-down-icon"></i>
-              <span class="exchange-item-price">4,411</span>
-            </div>
-          </div>
-          <div class="new-mini">
-            <div class="new-mini-card">
-              <div class="new-mini-card-image">
-                <img src="./src/assets/images/news/mini-1.jpeg" />
-              </div>
-              <div class="new-mini-card-content">
-                <p class="new-mini-card-content-text">
-                  TFF, Kuntz kararını resmen verdi
-                </p>
-              </div>
-            </div>
-            <div class="new-mini-card">
-              <div class="new-mini-card-image">
-                <img src="./src/assets/images/news/mini-2.jpeg" />
-              </div>
-              <div class="new-mini-card-content">
-                <div class="new-mini-card-content-text">
-                  Mahmut Tuncer, yaşadığı korkunç kazayı saniye saniye anlattı:
-                  tüm olan biten bir anda gerçekleşti qweq weqw qwe qwe qwe qw
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row-banner">
-          <img
-            class="vertical-banner-image image-responsive"
-            src="./src/assets/images/banner-vertical.jpeg"
-          />
-        </div>
-        <section class="row-content">
-          <div class="row-content-card">
-            <img
-              class="image-responsive"
-              src="./src/assets/images/news/news-1.jpeg"
-            />
-            <p>
-              Aile ve Sosyal Hizmetler Bakanı Mahinur Özdemir Göktaş, Türkiye
-              Aile Destek Programı kapsamında ödemelerin bugün itibarıyla
-              hesaplara yatırılacağını bildirdi ve son.
-            </p>
-          </div>
-          <div class="row-content-ad">
-            <img src="./src/assets/images/card-ad.jpeg" />
-          </div>
-          <div class="row-content-card">
-            <img
-              class="image-responsive"
-              src="./src/assets/images/news/news-2.jpeg"
-            />
-            <p>
-              Filenin Sultanları, Sırplara kabusu yaşattı! Boskovic intikam
-              yeminleri ediyor
-            </p>
-          </div>
-          <div class="row-content-card">
-            <img
-              class="image-responsive"
-              src="./src/assets/images/news/news-3.jpeg"
-            />
-            <p>
-              Kızılcık Şerbeti'nin 2. sezon afişinde Ceren Karakoç'un olmaması
-              hayranlarını kızdırdı
-            </p>
-          </div>
-          <div class="row-content-card">
-            <img
-              class="image-responsive"
-              src="./src/assets/images/news/news-4.jpeg"
-            />
-            <p>
-              Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
-              itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
-            </p>
-          </div>
-          <div class="row-content-card">
-            <img
-              class="image-responsive"
-              src="./src/assets/images/news/news-5.jpeg"
-            />
-            <p>
-              Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
-              itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
-            </p>
-          </div>
-          <div class="row-content-youtube">
-            <div class="row-content-youtube-title">
-              <div class="row-content-youtube-title-icon">H</div>
-              <div class="row-content-youtube-title-center">
-                <div class="row-content-youtube-title-center-text">
-                  Haberler.com
-                </div>
-                <button class="row-content-youtube-title-center-button">
-                  Abone Ol
-                </button>
-              </div>
-              <img
-                class="row-content-youtube-title-image"
-                src="./src/assets/images/youtube.jpeg"
-              />
-            </div>
-            <div class="row-content-youtube-item">
-              <img class="image-responsive" src="./src/assets/images/youtube/image-1.jpeg" />
-              <p>Sağlık Hukuku Nedir? Mihdiye Işıkoğlu</p>
-            </div>
-            <div class="divider"></div>
-            <div class="row-content-youtube-item">
-              <img class="image-responsive" src="./src/assets/images/youtube/image-2.jpeg" />
-              <p>Türkiye'yi Es Geçen Kasırga Libya'yı Vurdu!</p>
-            </div>
-            <div class="divider"></div>
-            <div class="row-content-youtube-item">
-              <img class="image-responsive" src="./src/assets/images/youtube/image-3.jpeg" />
-              <p>''Beni, İbrahim Tatlıses'i Devirmek İçin Piyasaya Çıkardılar'' | Mahmut…</p>
-            </div>
-            <div class="divider"></div>
-            <div class="row-content-youtube-item">
-              <img class="image-responsive" src="./src/assets/images/youtube/image-4.jpeg" />
-              <p>Bireysel Silahlanma Hakkı Olmalı Mı?</p>
-            </div>
-            <div class="divider"></div>
-            <div class="row-content-youtube-item">
-              <img class="image-responsive" src="./src/assets/images/youtube/image-5.jpeg" />
-              <p>Pentagon Raporu, En Çok UFO Nerelerde Görülüyor?</p>
-            </div>
-            <button class="row-content-youtube-show-all">Tümünü Gör</button>
-          </div>
-          <div class="row-content-card">
-            <img
-              class="image-responsive"
-              src="./src/assets/images/news/news-6.jpeg"
-            />
-            <p>
-              Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
-              itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
-            </p>
-          </div>
-          <div class="row-content-card">
-            <img
-              class="image-responsive"
-              src="./src/assets/images/news/news-7.jpeg"
-            />
-            <p>
-              Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
-              itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
-            </p>
-          </div>
-          <div class="row-content-card">
-            <img
-              class="image-responsive"
-              src="./src/assets/images/news/news-8.jpeg"
-            />
-            <p>
-              Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
-              itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
-            </p>
-          </div>
-          <div class="row-content-card">
-            <img
-              class="image-responsive"
-              src="./src/assets/images/news/news-9.jpeg"
-            />
-            <p>
-              Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
-              itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
-            </p>
-          </div>
-          <div class="row-content-card">
-            <img
-              class="image-responsive"
-              src="./src/assets/images/news/news-10.jpeg"
-            />
-            <p>
-              Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
-              itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
-            </p>
-          </div>
-        </section>
+      <div class="bottom-header">
+        <ul class="bottom-nav" aria-label="Bottom Header">
+          <li class="nav-item">DÜNYA</li>
+          <li class="nav-item">FİNANS</li>
+          <li class="nav-item">POLİTİKA</li>
+          <li class="nav-item">3.SAYFA</li>
+          <li class="nav-item">TEKNOLOJİ</li>
+          <li class="nav-item">GÜNCEL</li>
+          <li class="nav-item">YAŞAM</li>
+          <li class="nav-item">EĞİTİM</li>
+          <li class="nav-item">SAĞLIK</li>
+          <li class="nav-item">KUPONLAR</li>
+          <li class="nav-item">TÜM KATEGORİLER</li>
+        </ul>
       </div>
-    </main>
-  </body>
-  <script src="./src/scripts/index.js" type="module"></script>
+    </header>
+  </div>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-menu">
+      <a href="#">
+        <div class="sidebar-menu-item">
+          <div class="sidebar-menu-item-icon">
+            <i class="home-icon"></i>
+          </div>
+          <div class="sidebar-menu-item-text">Anasayfa</div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="sidebar-menu-item">
+          <div class="sidebar-menu-item-icon">
+            <i class="bolt-icon"></i>
+          </div>
+          <div class="sidebar-menu-item-text">Son Dakika</div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="sidebar-menu-item">
+          <div class="sidebar-menu-item-icon">
+            <i class="bolt-icon"></i>
+          </div>
+          <div class="sidebar-menu-item-text">Güncel</div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="sidebar-menu-item">
+          <div class="sidebar-menu-item-icon">
+            <i class="credit-card-icon"></i>
+          </div>
+          <div class="sidebar-menu-item-text">Ekonomi</div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="sidebar-menu-item">
+          <div class="sidebar-menu-item-icon">
+            <i class="bolt-icon"></i>
+          </div>
+          <div class="sidebar-menu-item-text">Magazin</div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="sidebar-menu-item">
+          <div class="sidebar-menu-item-icon">
+            <i class="bolt-icon"></i>
+          </div>
+          <div class="sidebar-menu-item-text">Spor</div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="sidebar-menu-item">
+          <div class="sidebar-menu-item-icon">
+            <i class="bolt-icon"></i>
+          </div>
+          <div class="sidebar-menu-item-text">Dünya</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="bg-blur"></div>
+  <main class="hb-container">
+    <img class="banner" src="./src/assets/images/banner.jpeg" />
+    <div class="main-content">
+      <div class="row-slider">
+        <div class="slider">
+          <div class="slider-image"></div>
+          <div class="slider-left">
+            <i class="chevron-left-icon"></i>
+          </div>
+          <div class="slider-right">
+            <i class="chevron-right-icon"></i>
+          </div>
+          <div class="slider-number"></div>
+        </div>
+        <div class="exchange">
+          <div class="exchange-item down">
+            <span class="exchange-item-type">Dolar</span>
+            <i class="chevron-down-icon"></i>
+            <span class="exchange-item-price">19,50</span>
+          </div>
+          <div class="exchange-item up">
+            <span class="exchange-item-type">Euro</span>
+            <i class="chevron-down-icon"></i>
+            <span class="exchange-item-price">21,55</span>
+          </div>
+          <div class="exchange-item up">
+            <span class="exchange-item-type">Altın</span>
+            <i class="chevron-down-icon"></i>
+            <span class="exchange-item-price">1267,64</span>
+          </div>
+          <div class="divider"></div>
+          <div class="exchange-item down">
+            <span class="exchange-item-type">Bitcoin</span>
+            <i class="chevron-down-icon"></i>
+            <span class="exchange-item-price">27,881</span>
+          </div>
+          <div class="exchange-item up">
+            <span class="exchange-item-type">Borsa</span>
+            <i class="chevron-down-icon"></i>
+            <span class="exchange-item-price">4,411</span>
+          </div>
+        </div>
+        <div class="new-mini">
+          <div class="new-mini-card">
+            <div class="new-mini-card-image">
+              <img src="./src/assets/images/news/mini-1.jpeg" />
+            </div>
+            <div class="new-mini-card-content">
+              <p class="new-mini-card-content-text">
+                TFF, Kuntz kararını resmen verdi
+              </p>
+            </div>
+          </div>
+          <div class="new-mini-card">
+            <div class="new-mini-card-image">
+              <img src="./src/assets/images/news/mini-2.jpeg" />
+            </div>
+            <div class="new-mini-card-content">
+              <div class="new-mini-card-content-text">
+                Mahmut Tuncer, yaşadığı korkunç kazayı saniye saniye anlattı:
+                tüm olan biten bir anda gerçekleşti qweq weqw qwe qwe qwe qw
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-banner">
+        <img class="vertical-banner-image image-responsive" src="./src/assets/images/banner-vertical.jpeg" />
+      </div>
+      <section class="row-content">
+        <div class="row-content-card">
+          <img class="image-responsive" src="./src/assets/images/news/news-1.jpeg" />
+          <p>
+            Aile ve Sosyal Hizmetler Bakanı Mahinur Özdemir Göktaş, Türkiye
+            Aile Destek Programı kapsamında ödemelerin bugün itibarıyla
+            hesaplara yatırılacağını bildirdi ve son.
+          </p>
+        </div>
+        <div class="row-content-ad">
+          <img src="./src/assets/images/card-ad.jpeg" />
+        </div>
+        <div class="row-content-card">
+          <img class="image-responsive" src="./src/assets/images/news/news-2.jpeg" />
+          <p>
+            Filenin Sultanları, Sırplara kabusu yaşattı! Boskovic intikam
+            yeminleri ediyor
+          </p>
+        </div>
+        <div class="row-content-card">
+          <img class="image-responsive" src="./src/assets/images/news/news-3.jpeg" />
+          <p>
+            Kızılcık Şerbeti'nin 2. sezon afişinde Ceren Karakoç'un olmaması
+            hayranlarını kızdırdı
+          </p>
+        </div>
+        <div class="row-content-card">
+          <img class="image-responsive" src="./src/assets/images/news/news-4.jpeg" />
+          <p>
+            Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
+            itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
+          </p>
+        </div>
+        <div class="row-content-card">
+          <img class="image-responsive" src="./src/assets/images/news/news-5.jpeg" />
+          <p>
+            Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
+            itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
+          </p>
+        </div>
+        <div class="row-content-youtube">
+          <div class="row-content-youtube-title">
+            <div class="row-content-youtube-title-icon">H</div>
+            <div class="row-content-youtube-title-center">
+              <div class="row-content-youtube-title-center-text">
+                Haberler.com
+              </div>
+              <button class="row-content-youtube-title-center-button">
+                Abone Ol
+              </button>
+            </div>
+            <img class="row-content-youtube-title-image" src="./src/assets/images/youtube.jpeg" />
+          </div>
+          <div class="row-content-youtube-item">
+            <img class="image-responsive" src="./src/assets/images/youtube/image-1.jpeg" />
+            <p>Sağlık Hukuku Nedir? Mihdiye Işıkoğlu</p>
+          </div>
+          <div class="divider"></div>
+          <div class="row-content-youtube-item">
+            <img class="image-responsive" src="./src/assets/images/youtube/image-2.jpeg" />
+            <p>Türkiye'yi Es Geçen Kasırga Libya'yı Vurdu!</p>
+          </div>
+          <div class="divider"></div>
+          <div class="row-content-youtube-item">
+            <img class="image-responsive" src="./src/assets/images/youtube/image-3.jpeg" />
+            <p>''Beni, İbrahim Tatlıses'i Devirmek İçin Piyasaya Çıkardılar'' | Mahmut…</p>
+          </div>
+          <div class="divider"></div>
+          <div class="row-content-youtube-item">
+            <img class="image-responsive" src="./src/assets/images/youtube/image-4.jpeg" />
+            <p>Bireysel Silahlanma Hakkı Olmalı Mı?</p>
+          </div>
+          <div class="divider"></div>
+          <div class="row-content-youtube-item">
+            <img class="image-responsive" src="./src/assets/images/youtube/image-5.jpeg" />
+            <p>Pentagon Raporu, En Çok UFO Nerelerde Görülüyor?</p>
+          </div>
+          <button class="row-content-youtube-show-all">Tümünü Gör</button>
+        </div>
+        <div class="row-content-card">
+          <img class="image-responsive" src="./src/assets/images/news/news-6.jpeg" />
+          <p>
+            Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
+            itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
+          </p>
+        </div>
+        <div class="row-content-card">
+          <img class="image-responsive" src="./src/assets/images/news/news-7.jpeg" />
+          <p>
+            Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
+            itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
+          </p>
+        </div>
+        <div class="row-content-card">
+          <img class="image-responsive" src="./src/assets/images/news/news-8.jpeg" />
+          <p>
+            Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
+            itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
+          </p>
+        </div>
+        <div class="row-content-card">
+          <img class="image-responsive" src="./src/assets/images/news/news-9.jpeg" />
+          <p>
+            Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
+            itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
+          </p>
+        </div>
+        <div class="row-content-card">
+          <img class="image-responsive" src="./src/assets/images/news/news-10.jpeg" />
+          <p>
+            Sinan Akçıl'dan eski eşi Burcu Kıratlı'nın gelinliğiyle ilgili
+            itiraf: Muhafazakar biriyim, gelinlikten rahatsız oldum
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-content-brand">
+        <span class="text-red">HABERLER</span>
+        <span class="text-gray">.COM</span>
+      </div>
+      <div class="divider"></div>
+      <div class="footer-content-list">
+        <span class="footer-content-list-title">Haber</span>
+        <span class="footer-content-list-item">Seçim Sonuçları</span>
+        <span class="footer-content-list-item">Ekonomi</span>
+        <span class="footer-content-list-item">Spor</span>
+        <span class="footer-content-list-item">Magazin</span>
+        <span class="footer-content-list-item">Dünya</span>
+        <span class="footer-content-list-item">Politika</span>
+        <span class="footer-content-list-item">3. Sayfa</span>
+      </div>
+      <div class="footer-content-list">
+        <span class="footer-content-list-title">Son Dakika</span>
+        <span class="footer-content-list-item">Sağlık</span>
+        <span class="footer-content-list-item">Teknoloji</span>
+        <span class="footer-content-list-item">Finans</span>
+        <span class="footer-content-list-item">Turizm</span>
+        <span class="footer-content-list-item">Yazarlar</span>
+        <span class="footer-content-list-item">Yerel Haberler</span>
+        <span class="footer-content-list-item">Haber Arşivi</span>
+      </div>
+      <div class="footer-content-list">
+        <span class="footer-content-list-title">Haberler</span>
+        <span class="footer-content-list-item">Joe Biden</span>
+        <span class="footer-content-list-item">Kadir Kara</span>
+        <span class="footer-content-list-item">Metin Gürak</span>
+        <span class="footer-content-list-item">Yılmaz Tunç</span>
+        <span class="footer-content-list-item">Şadi Yazıcı</span>
+        <span class="footer-content-list-item">Yaşar Güler</span>
+        <span class="footer-content-list-item">Ertuğrul Gazi</span>
+      </div>
+      <div class="footer-content-list">
+        <span class="footer-content-list-title">Magazin</span>
+        <span class="footer-content-list-item">Ezgi Mola</span>
+        <span class="footer-content-list-item">Tan Taşcı</span>
+        <span class="footer-content-list-item">Ferit Kaya</span>
+        <span class="footer-content-list-item">Hande Erçel</span>
+        <span class="footer-content-list-item">Deniz Çakır</span>
+        <span class="footer-content-list-item">Ecem Özkaya</span>
+        <span class="footer-content-list-item">Zuhal Olcay</span>
+      </div>
+      <div class="footer-content-list">
+        <span class="footer-content-list-title">Spor</span>
+        <span class="footer-content-list-item">Pepe</span>
+        <span class="footer-content-list-item">Salih Uçan</span>
+        <span class="footer-content-list-item">Ante Rebic</span>
+        <span class="footer-content-list-item">Çağdaş Atan</span>
+        <span class="footer-content-list-item">Fatih Terim</span>
+        <span class="footer-content-list-item">Salih Özcan</span>
+        <span class="footer-content-list-item">Stefan Kuntz</span>
+      </div>
+      <div class="footer-content-list">
+        <span class="footer-content-list-title">Tüm Kategoriler</span>
+        <span class="footer-content-list-item">Hava Durumu</span>
+        <span class="footer-content-list-item">Namaz Vakitleri</span>
+        <span class="footer-content-list-item">İmsakiye</span>
+        <span class="footer-content-list-item">Gamegar</span>
+        <span class="footer-content-list-item">Seçim Sonuçları</span>
+        <span class="footer-content-list-item">Şans Oyunları</span>
+        <span class="footer-content-list-item">Rüya Tabirleri</span>
+      </div>
+      <div class="footer-content-list">
+        <span class="footer-content-list-title empty"></span>
+        <span class="footer-content-list-item">Yemek Tarifleri</span>
+        <span class="footer-content-list-item">Anne-Çocuk</span>
+        <span class="footer-content-list-item">Burçlar</span>
+        <span class="footer-content-list-item">Doğruluk Kontrolu</span>
+        <span class="footer-content-list-item">Döviz Kurları</span>
+        <span class="footer-content-list-item">Eğitim</span>
+        <span class="footer-content-list-item">Güncel</span>
+      </div>
+      <div class="footer-content-list">
+        <span class="footer-content-list-title empty"></span>
+        <span class="footer-content-list-item">Gücel Sözler</span>
+        <span class="footer-content-list-item">Güzellik</span>
+        <span class="footer-content-list-item">Kadın</span>
+        <span class="footer-content-list-item">Komik Haberler</span>
+        <span class="footer-content-list-item">Koronavirüs</span>
+        <span class="footer-content-list-item">Kültür - Sanat</span>
+        <span class="footer-content-list-item">Maç Sonuçları</span>
+      </div>
+      <div class="footer-content-list">
+        <span class="footer-content-list-title empty"></span>
+        <span class="footer-content-list-item">Manşetler</span>
+        <span class="footer-content-list-item">Moda</span>
+        <span class="footer-content-list-item">Otomobil</span>
+        <span class="footer-content-list-item">Podcast</span>
+        <span class="footer-content-list-item">Son Dakika</span>
+        <span class="footer-content-list-item">Son Depremler</span>
+        <span class="footer-content-list-item">TV Yayın Akışı</span>
+      </div>
+      <div class="footer-content-list">
+        <span class="footer-content-list-title">Kurumsal</span>
+        <span class="footer-content-list-item">Hakkımızda</span>
+        <span class="footer-content-list-item">İletişim</span>
+        <span class="footer-content-list-item">Künye</span>
+        <span class="footer-content-list-item">Reklam</span>
+        <span class="footer-content-list-item">İşbirliği</span>
+        <span class="footer-content-list-item">RSS</span>
+        <span class="footer-content-list-item">Webmaster</span>
+      </div>
+      <div class="divider"></div>
+      <div class="social">
+        <div class="social-platform">
+          <span class="social-platform-title">Sosyal Medya</span>
+          <div class="social-platform-content"></div>
+        </div>
+        <div class="social-app">
+          <div class="social-app-title">Mobil Uygulamamızı İndirin</div>
+          <div class="social-app-content"></div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="footer-policy">
+        <a href="#"><span class="footer-policy-link">Yayın İlkeleri</span></a>
+        <a href="#"> <span class="footer-policy-link">Kullanım Şartları</span></a>
+        <a href="#"> <span class="footer-policy-link">Gizlilik Politikası</span></a>
+        <a href="#"> <span class="footer-policy-link">Çerez Politikası</span></a>
+        <a href="#"> <span class="footer-policy-link">Kişisel Verilerin Korunması</span></a>
+        <a href="#"><span class="footer-policy-link">Veri Sahibi Başvuru Formu</span></a>
+        <div class="error-notification">
+          <span class="error-notification-current-date"></span>
+          <button class="error-notification-btn">Hata Bildirimi</button>
+        </div>
+      </div>
+      <div class="footer-desc">Haberler © 2023 - Türkiye'nin en kapsamlı haber sitesi. Son dakika haberleri ve en güncel gelişmeler Haberler.com'da.</div>
+    </div>
+  </footer>
+</body>
+<script src="./src/scripts/index.js" type="module"></script>
+
 </html>

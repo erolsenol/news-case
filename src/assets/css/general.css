@@ -465,6 +465,12 @@ ul > li {
   cursor: pointer;
 }
 
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #ffffff;
+}
+
 /* Media Queries */
 /* Header */
 @media only screen and (max-width: 1024px) {
